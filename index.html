@@ -6,6 +6,12 @@
     <title>PH Tube</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+     .active{
+          background-color: #FF1F3D;
+          color: white;
+     }
+</style>
 </head>
 <body>
    <header>
@@ -18,15 +24,28 @@
 <main>
      <div id="btn-container" class="flex justify-center gap-4 my-6">
         <div>
-          <button class="btn btn-md bg-[#FF1F3D] rounded-md text-white" onclick="loadVideos()">All</button>
+          <button class="btn btn-md active-btn rounded-md active" onclick="loadVideos()">All</button>
         </div>
      </div>
     
 
      <section id="video-container" class="grid md:grid-cols-3 lg:grid-cols-4 gap-4 w-7/8 mx-auto">
         
-         
      </section>
+
+<dialog id="video_details" class="modal">
+  <div class="modal-box w-1/4">
+   <div id="details-container">
+
+   </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="btn text-white bg-[#FF1F3D]">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
 </main>
 <script src="phtube.js"></script>
 </body>
