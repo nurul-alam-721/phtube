@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+   <header>
+        <nav class="flex justify-between border-b-2 p-5">
+             <img src="./assets/Logo.png" alt="">
+             <button class="btn btn-default text-xl p-4">Sort by view</button>
+             <button class="btn btn-error text-white text-xl font-semibold">Blog</button>
+        </nav>
+</header>
+<main>
+     <div id="btn-container" class="flex justify-center gap-4 my-6">
+        <div>
+          <button class="btn btn-md bg-[#FF1F3D] rounded-md text-white" onclick="loadVideos()">All</button>
+        </div>
+     </div>
+    
+
+     <section id="video-container" class="grid md:grid-cols-3 lg:grid-cols-4 gap-4 w-7/8 mx-auto">
+        
+         
+     </section>
+</main>
+<script src="phtube.js"></script>
+</body>
+</html>
