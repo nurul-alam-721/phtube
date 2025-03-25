@@ -58,7 +58,7 @@ const displayVideos=(videos)=>{
     videos.forEach(video => {
         const newDiv = document.createElement("div");
         newDiv.innerHTML=`
-             <div class="card bg-base-100">
+             <div class="card bg-base-100 my-8">
                <figure class="relative" >
                  <img
                    src="${video.thumbnail}" class="rounded-lg w-full h-[150px] object-cover"/>
@@ -77,7 +77,7 @@ const displayVideos=(videos)=>{
                   <p class="text-lg">${video.others.views} views</p>
                   </div>
               </div>
-              <button class="btn btn-wide" onclick="loadVideoDetails('${video.video_id}')">Show Details</button>
+              <button class="btn btn-wide bg-slate-100 rounded-md mx-auto" onclick="loadVideoDetails('${video.video_id}')">Show Details</button>
              </div>
         `
         videoContainer.append(newDiv);
